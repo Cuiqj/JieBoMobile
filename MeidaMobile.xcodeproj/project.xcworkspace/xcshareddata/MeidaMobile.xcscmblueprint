@@ -1,0 +1,42 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2693a6d5-1ebd-46bd-a85d-33a72c51ae1b++7155+++67D333F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "2693a6d5-1ebd-46bd-a85d-33a72c51ae1b++7155+++67D333F" : {
+
+    },
+    "2693a6d5-1ebd-46bd-a85d-33a72c51ae1b++7155+++3E23E12" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2693a6d5-1ebd-46bd-a85d-33a72c51ae1b++7155+++67D333F" : 0,
+    "2693a6d5-1ebd-46bd-a85d-33a72c51ae1b++7155+++3E23E12" : 0,
+    "CC9E6813401FC20BF860D9A1BE28999344063381+++36C6F18" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4F17A9FB-28D9-41DF-BFEA-E80D0C64CC0D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2693a6d5-1ebd-46bd-a85d-33a72c51ae1b++7155+++67D333F" : "JieBoMobile",
+    "2693a6d5-1ebd-46bd-a85d-33a72c51ae1b++7155+++3E23E12" : "JieBoMobile",
+    "CC9E6813401FC20BF860D9A1BE28999344063381+++36C6F18" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MeidaMobile",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MeidaMobile.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.edaoyou.com\/edaoyou",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2693a6d5-1ebd-46bd-a85d-33a72c51ae1b++7155+++3E23E12"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.edaoyou.com\/edaoyou",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2693a6d5-1ebd-46bd-a85d-33a72c51ae1b++7155+++67D333F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.0.243\/guizhouluzheng.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CC9E6813401FC20BF860D9A1BE28999344063381+++36C6F18"
+    }
+  ]
+}

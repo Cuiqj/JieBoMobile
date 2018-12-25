@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pdf:template>
+	{{! 公路赔（补）偿案件询问笔录 }}
+	<pdf:paper width="595.276" height="841.89" fontName="SimSun" fontSize="10.5" offset="1,-4" />
+	<pdf:content>
+		<pdf:text point="54,29" fontName="SimHei" fontSize="20.5">公路赔（补）偿案件询问笔录</pdf:text>
+		<pdf:text point="127,45">案号（</pdf:text>
+		<pdf:text point="139,45" static="NO">{{ case.mark2  }}</pdf:text>
+		<pdf:text point="154.5,45">）年（</pdf:text>
+		<pdf:text point="165,45" static="NO">{{ case.mark3 }}</pdf:text>
+		<pdf:text point="181,45">）号</pdf:text>
+		<pdf:table rect="{24.1,50},{172,220}" borderWidth="1.0" lineWidth="0.5" padding="1">
+			<pdf:tr height="11"><pdf:td width="172">
+                <pdf:paragraph rect="{4,1},{156,220}" lineHeight="10" static="NO">
+                    {{ caseInquire.inquireNote }}
+                </pdf:paragraph>
+            </pdf:td></pdf:tr>
+			<pdf:tr height="11"><pdf:td width="172">{{! 空白行 }}</pdf:td></pdf:tr>
+			<pdf:tr height="11"><pdf:td width="172">{{! 空白行 }}</pdf:td></pdf:tr>
+			<pdf:tr height="11"><pdf:td width="172">{{! 空白行 }}</pdf:td></pdf:tr>
+			<pdf:tr height="11"><pdf:td width="172">{{! 空白行 }}</pdf:td></pdf:tr>
+			<pdf:tr height="11"><pdf:td width="172">{{! 空白行 }}</pdf:td></pdf:tr>
+			<pdf:tr height="11"><pdf:td width="172">{{! 空白行 }}</pdf:td></pdf:tr>
+            <pdf:tr height="10"><pdf:td width="172">{{! 空白行 }}</pdf:td></pdf:tr>
+			<pdf:tr height="10"><pdf:td width="172">{{! 空白行 }}</pdf:td></pdf:tr>
+			<pdf:tr height="10"><pdf:td width="172">{{! 空白行 }}</pdf:td></pdf:tr>
+			<pdf:tr height="10"><pdf:td width="172">{{! 空白行 }}</pdf:td></pdf:tr>
+			<pdf:tr height="10"><pdf:td width="172">{{! 空白行 }}</pdf:td></pdf:tr>
+			<pdf:tr height="10"><pdf:td width="172">{{! 空白行 }}</pdf:td></pdf:tr>
+			<pdf:tr height="10"><pdf:td width="172">{{! 空白行 }}</pdf:td></pdf:tr>
+			<pdf:tr height="10"><pdf:td width="172">{{! 空白行 }}</pdf:td></pdf:tr>
+			<pdf:tr height="10"><pdf:td width="172">{{! 空白行 }}</pdf:td></pdf:tr>
+            <pdf:tr height="11"><pdf:td width="172">{{! 空白行 }}</pdf:td></pdf:tr>
+			<pdf:tr height="12">
+				<pdf:td width="172" textAlignment="left">被询问人签名并按印：</pdf:td>
+			</pdf:tr>
+			<pdf:tr height="10">
+				<pdf:td width="172">
+					<pdf:text point="mid-left:1.5,6">询问人签字：</pdf:text>
+					<pdf:text point="mid-left:67,6">证件号码：</pdf:text>
+				</pdf:td>
+			</pdf:tr>
+			<pdf:tr height="10">
+				<pdf:td width="172">
+					<pdf:text point="mid-left:1.5,6">记录人签字：</pdf:text>
+					<pdf:text point="mid-left:67,6">证件号码：</pdf:text>
+				</pdf:td>
+			</pdf:tr>
+			<pdf:tr height="10">
+				<pdf:td width="172">
+					<pdf:text point="mid-left:127,6">共</pdf:text>
+					<pdf:text point="mid-left:132.5,6" static="NO">{{ page.pageCount  }}</pdf:text>
+					<pdf:text point="mid-left:142,6">页第</pdf:text>
+					<pdf:text point="mid-left:151.5,6" static="NO">{{ page.pageNum  }}</pdf:text>
+					<pdf:text point="mid-left:160,6">页</pdf:text>
+				</pdf:td>
+			</pdf:tr>
+		</pdf:table>
+		<pdf:text point="22,271">（本页填写不下的内容，可另附纸）</pdf:text>
+	</pdf:content>
+</pdf:template>
