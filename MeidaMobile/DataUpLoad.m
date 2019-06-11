@@ -13,7 +13,7 @@
 
 //所需上传的表名称
 //modify by lxm 2013.05.13
-static NSString *dataNameArray[UPLOADCOUNT]={@"Project",@"Task",@"AtonementNotice",@"CaseDeformation",@"CaseInfo",@"CaseInquire",@"CaseProveInfo",@"CaseServiceFiles",@"CaseServiceReceipt",@"Citizen",@"RoadWayClosed",@"Inspection",@"InspectionCheck",@"InspectionOutCheck",@"InspectionPath",@"InspectionRecord",@"ParkingNode",@"CaseMap",@"ConstructionChangeBack",@"TrafficRecord"};
+static NSString *dataNameArray[UPLOADCOUNT]={@"Project",@"Task",@"AtonementNotice",@"CaseDeformation",@"CaseInquire",@"CaseProveInfo",@"CaseServiceFiles",@"CaseServiceReceipt",@"Citizen",@"RoadWayClosed",@"Inspection",@"InspectionCheck",@"InspectionOutCheck",@"InspectionPath",@"InspectionRecord",@"CaseInfo",@"ParkingNode",@"CaseMap",@"ConstructionChangeBack",@"TrafficRecord"};
 
 //static NSString *dataNameArray[UPLOADCOUNT]={@"CaseMap"};
 
@@ -57,10 +57,14 @@ static NSString *dataNameArray[UPLOADCOUNT]={@"Project",@"Task",@"AtonementNotic
 
 - (void)uploadDataAtIndex:(NSInteger)index{
     NSString *currentDataName = dataNameArray[index];
-    if ([currentDataName isEqualToString:@"CaseServiceReceipt"]) {
-        NSLog(@"");
-    }
+    NSLog(@"%@",currentDataName);
+    
     NSArray *dataArray = [NSClassFromString(currentDataName) uploadArrayOfObject];
+    if ([currentDataName isEqualToString:@"AtonementNotice"]) {
+        NSLog(@"%@",dataArray);
+//       dataArray = [NSClassFromString(currentDataName) uploadArrayOfObjectyes];
+        
+    }
     if (dataArray.count > 0) {
         
         NSString *dataTypeString = [NSClassFromString(currentDataName) complexTypeString];

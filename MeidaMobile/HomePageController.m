@@ -32,14 +32,15 @@
 
 //监测是否设置当前机构，否则弹出机构选择菜单
 - (void)viewDidAppear:(BOOL)animated{
-     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logOut) name:@"TOLOGIN" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logOut) name:@"TOLOGIN" object:nil];
     [self loadUserLabel];
     if ([UserInfo allUserInfo].count <= 0) {
         OrgSyncViewController *osVC = [self.storyboard instantiateViewControllerWithIdentifier:@"OrgSyncVC"];
         osVC.modalPresentationStyle = UIModalPresentationFormSheet;
         osVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
         osVC.delegate=self;
-        [self presentModalViewController:osVC animated:YES];
+//        [self presentModalViewController:osVC animated:YES];
+        [self presentViewController:osVC animated:YES completion:nil];
     } else {
         NSString *currentUserID=[[NSUserDefaults standardUserDefaults] stringForKey:USERKEY];
         if (currentUserID == nil || [currentUserID isEmpty]) {

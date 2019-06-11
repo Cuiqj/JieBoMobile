@@ -21,4 +21,6 @@
 
 //根据数据生成上传数据字段;
 - (NSString *)dataXMLString;
+
++ (NSArray *)uploadArrayOfObjectyes;
 @end

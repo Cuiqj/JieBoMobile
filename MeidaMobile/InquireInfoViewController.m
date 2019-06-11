@@ -805,16 +805,23 @@ enum kUITextFieldTag {
     }
 }
 
+//点击询问人或记录人
 - (void)presentPopoverFromRect:(CGRect)rect dataSource:(NSArray *)dataArray tableViewTag:(NSInteger)tag {
-    ListSelectViewController *popoverContent = [self.storyboard instantiateViewControllerWithIdentifier:@"ListSelectPoPover"];
+    ListSelectViewController * popoverContent = [self.storyboard instantiateViewControllerWithIdentifier:@"ListSelectPoPover"];
     popoverContent.data = dataArray;    
     popoverContent.delegate = self;
     popoverContent.tableView.tag = tag;
-    if (self.listSelectPopover == nil) {
-        self.listSelectPopover = [[UIPopoverController alloc] initWithContentViewController:popoverContent];
-    } else {
-        [self.listSelectPopover setContentViewController:popoverContent];
+    
+    if(self.listSelectPopover){
+        if([self.listSelectPopover isPopoverVisible]){
+            [self.listSelectPopover setContentViewController:popoverContent];
+            return;
+        }else{
+            self.listSelectPopover = nil;
+        }
     }
+    self.listSelectPopover = [[UIPopoverController alloc] initWithContentViewController:popoverContent];
+    
     popoverContent.pickerPopover = self.listSelectPopover;
     [self.listSelectPopover presentPopoverFromRect:rect inView:self.view permittedArrowDirections:UIPopoverArrowDirectionLeft animated:YES];
 }

@@ -64,7 +64,8 @@
     NSEntityDescription *entity=[NSEntityDescription entityForName:NSStringFromClass([self class]) inManagedObjectContext:context];
     NSFetchRequest *fetchRequest=[[NSFetchRequest alloc] init];
     [fetchRequest setEntity:entity];
-    [fetchRequest setPredicate:nil];
+//    [fetchRequest setPredicate:nil];
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"delflag == 0"]];
     return [context executeFetchRequest:fetchRequest error:nil];
 }
 @end

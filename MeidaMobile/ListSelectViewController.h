@@ -13,7 +13,7 @@
 
 @interface ListSelectViewController : UITableViewController
 
-@property (nonatomic,weak) UIPopoverController *pickerPopover;
+@property (nonatomic,retain) UIPopoverController *pickerPopover;
 @property (nonatomic,weak) id<ListSelectPopoverDelegate> delegate;
 @property (nonatomic,strong) NSArray *data;
 

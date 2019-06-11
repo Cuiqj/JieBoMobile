@@ -26,6 +26,17 @@
     return [context executeFetchRequest:fetchRequest error:nil];
 }
 
++ (NSArray *)uploadArrayOfObjectyes{
+    NSManagedObjectContext *context=[[AppDelegate App] managedObjectContext];
+    NSEntityDescription *entity=[NSEntityDescription entityForName:NSStringFromClass([self class]) inManagedObjectContext:context];
+    NSFetchRequest *fetchRequest=[[NSFetchRequest alloc] init];
+    [fetchRequest setEntity:entity];
+    [fetchRequest setPredicate:[NSPredicate  predicateWithFormat:@"isuploaded.boolValue == YES"]];
+    return [context executeFetchRequest:fetchRequest error:nil];
+}
+
+
+
 + (id)newDataObjectWithEntityName:(NSString *)entityName{
     NSManagedObjectContext *context=[[AppDelegate App] managedObjectContext];
     NSEntityDescription *entity=[NSEntityDescription entityForName:entityName inManagedObjectContext:context];
