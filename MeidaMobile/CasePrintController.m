@@ -94,50 +94,33 @@ NSString * const DefaultTemplateDirectory = @"DocTemplates";
                 id data = [self.delegate dataForPDFTemplate];
                 
                 if ([data objectForKey:@"caseInquire"]) {
-                    
                     NSMutableDictionary *dataDic = [[NSMutableDictionary dictionaryWithDictionary:data] mutableCopy];
                     NSMutableDictionary *caseInquire = [NSMutableDictionary dictionaryWithDictionary:[dataDic valueForKey:@"caseInquire"]];
                     NSArray * pagesArray = [caseInquire objectForKey:@"inquireNote"];
                     if (pagesArray.count >= 2) {
-                            
                         NSMutableDictionary * dataDic2 = [[NSMutableDictionary dictionaryWithDictionary:data] mutableCopy];
-                        
                         NSArray *inquireNotePage1 = [[pagesArray objectAtIndex:0] copy];
                         NSArray *inquireNotePage2 = [[pagesArray objectAtIndex:1] copy];
-                        
                         NSMutableDictionary *caseInquire2 = [NSMutableDictionary dictionaryWithDictionary:[dataDic valueForKey:@"caseInquire"]];
-                        
                         NSMutableDictionary *page2 = [NSMutableDictionary dictionaryWithDictionary:[dataDic valueForKey:@"page"]];
                         [page2 setObject:@"2" forKey:@"pageNum"];
                         [dataDic2 setObject:page2 forKey:@"page"];
-                        
                         [caseInquire setObject:inquireNotePage1 forKey:@"inquireNote"];
                         [dataDic setObject:caseInquire forKey:@"caseInquire"];
-                        
                         [caseInquire2 setObject:inquireNotePage2 forKey:@"inquireNote"];
                         [dataDic2 setObject:caseInquire2 forKey:@"caseInquire"];
-                        
                         //测试
                          GRMustacheTemplate *template2= [self.templateRepo templateNamed:@"GongLuPeiBuChangAnJianXunWenBiLuExtra.xml" error:&err];
-                        
-                        
                         NSString *rendering = [template renderObject:dataDic error:&err];
                         NSString *renderingPage2 = [template2 renderObject:dataDic2 error:&err];
-                        
                         if (err == nil) {
                             self.pdfRenderer = [[XMLPDFRenderer alloc] init];
-                            
                             [self.pdfRenderer renderFromXML:rendering XML2:renderingPage2 toPDF:path dataOnly:isDataOnly];
                             return YES;
-                            
                         }
                     }
-                        
-
-                    
-                    
                 } 
-                    NSString *rendering = [template renderObject:data error:&err];
+                NSString *rendering = [template renderObject:data error:&err];
                     
                     if (err == nil) {
                         self.pdfRenderer = [[XMLPDFRenderer alloc] init];

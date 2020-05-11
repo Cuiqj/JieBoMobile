@@ -147,9 +147,11 @@
     [UIView setAnimationCurve:animationCurve];
     CGRect newFrame = self.remarkTextView.frame;
     if (up) {
-        newFrame.size.height = 581 - keyboardEndFrame.size.width-5;
+        newFrame.origin.y = 70;
+//        newFrame.size.height = 433 -keyboardEndFrame.size.height + 100;
     } else {
-        newFrame.size.height = 433;
+        newFrame.origin.y = 167;
+//        newFrame.size.height = 433;
     }
     self.remarkTextView.frame = newFrame;
 

@@ -1533,7 +1533,7 @@
 				LastUpgradeCheck = 0430;
 				TargetAttributes = {
 					33A5274514F4E3E6009BC91E = {
-						DevelopmentTeam = 27NSK65R5P;
+						DevelopmentTeam = 97S66GFTED;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -1886,7 +1886,7 @@
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Guangzhou Zhongjiao Yuke Spatial Information Technology Co., Ltd. (97S66GFTED)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 27NSK65R5P;
+				DEVELOPMENT_TEAM = 97S66GFTED;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeidaMobile/MeidaMobile-Prefix.pch";
@@ -1901,9 +1901,9 @@
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = adam.JieBoMobile;
 				PRODUCT_NAME = MeidaMobile;
-				PROVISIONING_PROFILE = "9343f4d1-5644-4449-919d-f677981defd2";
+				PROVISIONING_PROFILE = "a7f3ff8b-04af-4b02-8c3f-21ab35d73271";
 				"PROVISIONING_PROFILE[sdk=*]" = "a22fb621-996c-4128-8aa4-9bf659e1dd11";
-				PROVISIONING_PROFILE_SPECIFIER = AllProjectCanUsedevelopment;
+				PROVISIONING_PROFILE_SPECIFIER = AllProjectDevelopment_zeng_zhh;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				VALID_ARCHS = "armv7 arm64";
 				WRAPPER_EXTENSION = app;
@@ -1918,7 +1918,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Guangzhou Zhongjiao Yuke Spatial Information Technology Co., Ltd. (97S66GFTED)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 27NSK65R5P;
+				DEVELOPMENT_TEAM = 97S66GFTED;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeidaMobile/MeidaMobile-Prefix.pch";
@@ -1933,9 +1933,9 @@
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = adam.JieBoMobile;
 				PRODUCT_NAME = MeidaMobile;
-				PROVISIONING_PROFILE = "8bdf704f-d428-4cfe-ba34-5b1834d9f2f7";
+				PROVISIONING_PROFILE = "b3e7411e-d447-4907-a56a-e99c5875a504";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "a22fb621-996c-4128-8aa4-9bf659e1dd11";
-				PROVISIONING_PROFILE_SPECIFIER = AllProjectCanDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = AllProjectDistribution_zeng_zhh;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				VALID_ARCHS = "armv7 arm64";
 				WRAPPER_EXTENSION = app;

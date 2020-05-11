@@ -4,11 +4,11 @@
 	<pdf:paper width="595.276" height="841.89" fontName="SimSun" fontSize="10.5" offset="1,-4" />
 	<pdf:content>
 		<pdf:text point="54,29" fontName="SimHei" fontSize="20.5">公路赔（补）偿案件询问笔录</pdf:text>
-		<pdf:text point="127,45">案号（</pdf:text>
-		<pdf:text point="142,45" static="NO">{{ case.mark2  }}</pdf:text>
-		<pdf:text point="154.5,45">）年（</pdf:text>
-		<pdf:text point="168,45" static="NO">{{ case.mark3 }}</pdf:text>
-		<pdf:text point="181,45">）号</pdf:text>
+        <pdf:text point="127,45">案号（</pdf:text>
+        <pdf:text point="140.5,45" static="NO">{{ case.mark2  }}</pdf:text>
+        <pdf:text point="153,45">）年（</pdf:text>
+        <pdf:text point="165,45" static="NO">{{ case.mark3 }}</pdf:text>
+        <pdf:text point="181,45">）号</pdf:text>
 		<pdf:table rect="{24.1,50},{172,220}" borderWidth="1.0" lineWidth="0.5" padding="1">
 			<pdf:tr height="11">
 				<pdf:td width="172">
@@ -55,7 +55,7 @@
 				</pdf:td>
 			</pdf:tr>
 			<pdf:tr height="11"><pdf:td width="172">
-                <pdf:paragraph rect="{4,1.7},{166,120}" lineHeight="9.36" static="NO">
+                <pdf:paragraph rect="{4,1.7},{166,125}" lineHeight="10" static="NO">
                     {{ caseInquire.inquireNote }}
                 </pdf:paragraph>
             </pdf:td></pdf:tr>

@@ -801,8 +801,7 @@ static inline CTFontRef CTFontFromUIFont(UIFont *font) {
 
 #pragma mark - Draw method
 
-- (void)drawContentToContextWithNode:(TBXMLElement *)contentNode offset:(CGPoint)offset dataOnly:(BOOL)isDataOnly
-{
+- (void)drawContentToContextWithNode:(TBXMLElement *)contentNode offset:(CGPoint)offset dataOnly:(BOOL)isDataOnly{
 
     [self pushDrawContext];
     [TBXML iterateElementsForQuery:@"*" fromElement:contentNode withBlock:^(TBXMLElement *element) {

@@ -324,8 +324,8 @@ static NSString * const xmlName = @"CaseCountTable";
             emptyItemCnt--;
         }
     }
-    /* 若不足10个，用空数据补足 */
-    for (int i = 10-emptyItemCnt; i < 9; i++) {
+    /* 若不足16个，用空数据补足 */
+    for (NSUInteger i = 16-emptyItemCnt; i<16 ; i++) {
         [itemsData addObject:@{@"id":@(i+1)}];
     }
     
